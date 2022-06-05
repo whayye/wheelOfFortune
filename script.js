@@ -138,7 +138,7 @@ const runTickerAnimation = () => {
 
 // функция выбора призового сектора
 const selectPrize = () => {
-    const selected = Math.floor(rotation / prizeSlice);
+    const selected = Math.floor((rotation - 90) / prizeSlice);
     prizeNodes[selected].classList.add(selectedClass);
 };
 
